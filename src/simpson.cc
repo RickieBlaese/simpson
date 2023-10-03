@@ -18,8 +18,8 @@ std::uint64_t get_current_time() {
 }
 
 FT f(const FT &x) {
-    FT t = std::sin(x);
-    return t * t;
+    FT t = x;
+    return std::sin(t);
 }
 
 FT simpson_integration(const FT &a, const FT &b) {
